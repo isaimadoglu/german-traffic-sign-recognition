@@ -1,0 +1,32 @@
+conda --version
+conda env list
+conda create -n myenv python=3.7.2
+Y
+conda create -n tf_env python=3.7.2
+conda activate tf_env
+where pip
+pip freeze
+pip install tensorflow
+pip freeze
+python    # to learn whether tensorflow 2.1 is installed or not
+pip freeze
+conda install -c conda-forge opencv
+Y
+pip freeze
+conda install opencv
+conda install pandas
+pip freeze
+cd Documents
+dir
+cd GitHub
+dir
+cd german-traffic-sign-recognition
+dir
+python tf_model_usage.py
+conda install Pillow
+python tf_model_usage.py
+conda install scikit-learn 
+python tf_model_usage.py
+conda install matplotlib
+python tf_model_usage.py
+# doskey /HISTORY > history.txt    # to create this file
