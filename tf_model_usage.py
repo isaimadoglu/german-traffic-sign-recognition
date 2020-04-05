@@ -41,8 +41,11 @@ channels = 3
 num_classes = 43
 
 
-path = "./gtsrb-dataset/Train/1/"
-a = "00001_00000_00000.png"
+#path = "./gtsrb-dataset/Train/1/"
+#a = "00001_00000_00000.png"
+
+path = "./"
+a = "yaya-bölgesi-azami-hız-sınırı-20-km.jpg"
 
 try:
     image=cv2.imread(path+a) # siradaki image'i imread ile okuyor.
@@ -59,11 +62,11 @@ except Error:
 loaded_model = tf.keras.models.load_model('model1.h5')
 
 # Show the model architecture
-loaded_model.summary()
+#loaded_model.summary()
 
 
-X_test=np.array(data)
-X_test = X_test.astype('float32')/255
+X_test = np.array(data)
+X_test = X_test.astype('float32')/255  # <class 'numpy.ndarray'>
 pred = loaded_model.predict_classes(X_test)
 
 #plt.imshow(image)
