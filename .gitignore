@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# PyCharm project settings
+.idea
+
+# Visual Studio Code project settings
+.vscode
